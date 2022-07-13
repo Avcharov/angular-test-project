@@ -24,12 +24,5 @@ export class Cars {
     },
   ];
   constructor() {}
-  addCar() {
-    this.carz.push({
-      name: this.name,
-      year: this.year,
-    });
-    this.name = '';
-    this.year = 2015;
-  }
+  
 }
