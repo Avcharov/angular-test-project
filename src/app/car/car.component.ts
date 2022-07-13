@@ -5,5 +5,4 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./car.component.css'],
 })
 export class Car {
-  @Input() carItem: { name: string; year: number };
 }
