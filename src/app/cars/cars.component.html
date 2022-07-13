@@ -1,2 +1,9 @@
-<app-car></app-car>
+<input type = "text" class = "form-control" [(ngModel)] = "name">
+<p>
+  <input type = "text" class = "form-control" [(ngModel)] = "year">
+
+<p>
+<button class = "btn btn-lox" (click) = "addCar()">Add Car</button>
+<hr>
+<app-car *ngFor = "let car in carz" [carItem] = "car"> </app-car>
 <app-car></app-car>

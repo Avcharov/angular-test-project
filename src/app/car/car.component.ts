@@ -5,4 +5,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./car.component.css'],
 })
 export class Car {
+  //name = 'Ford';
+  //year = 2017;
+ @Input() carItem:  {name:string,year:number};
+
 }
