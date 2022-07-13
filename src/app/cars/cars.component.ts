@@ -15,7 +15,7 @@ export class Cars {
       year: 2015,
     },
     {
-      name: 'Mazda',
+      name: ,
       year: 2010,
     },
     {
