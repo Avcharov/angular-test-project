@@ -1,0 +1,9 @@
+<input type="text" class="form-conrol" [(ngModel)]="name" />
+<p></p>
+<input type="text" class="form-conrol" [(ngModel)]="year" />
+<p></p>
+<button class="btn btn-primary" (click)="addCar()">Add car</button>
+
+<app-car *ngFor="let car of carz" [carItem]="car"></app-car>
+
+<hr />
