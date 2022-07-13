@@ -23,14 +23,12 @@ export class Cars {
       year: 2014,
     },
   ];
-constructor(){
-  
-}
+  constructor() {}
   addCar() {
     this.carz.push({
-      name:this.name,
-      year: this.year
-    })
+      name: this.name,
+      year: this.year,
+    });
     this.name = '';
     this.year = 2015;
   }

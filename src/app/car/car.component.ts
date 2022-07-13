@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
 export class Car {
   //name = 'Ford';
   //year = 2017;
- @Input() carItem:  {name:string,year:number};
-
+  @Input() carItem: { name: string; year: number };
 }
