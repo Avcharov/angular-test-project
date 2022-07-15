@@ -8,11 +8,11 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class AddCar  {
   CarName = '';
   CarYear = 2017;
-  @Output() onAddCar = new EventEmitter<{name:string, year: number}>();
+  @Output('onAddCar') carEmitter = new EventEmitter<{name:string, year: number}>();
   constructor() { }
 
   addCar(){
-    this.onAddCar.emit({
+    this.carEmitter.emit({
       name:this.CarName,
       year: this.CarYear
     });
