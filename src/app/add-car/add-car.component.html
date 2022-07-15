@@ -1,7 +1,5 @@
-<input type="text" class="form-control" [(ngModel)]="CarName" >
+<input type="text" class="form-control" #carNameInput >
 <p></p>
-<input type="text" class="form-control" [(ngModel)]="CarYear" >
-
-
+<input type="text" class="form-control" #carYearInput >
 <p></p>
-  <button class="btn btn-lox" (click)="addCar()">Add Car</button>
+  <button class="btn btn-lox" (click)="addCar(carNameInput)">Add Car</button>
