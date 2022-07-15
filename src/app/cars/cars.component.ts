@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: '.app-cars',
@@ -24,5 +24,7 @@ export class Cars {
     },
   ];
   constructor() {}
-  
+  updateCarList(car: { name: string; year: number }) {
+    this.carz.push(car);
+  }
 }
