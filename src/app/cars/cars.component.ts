@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class Cars implements OnInit {
 
   constructor() { }
-cars 
+cars:{name:string,year:number}[]= [{
+  name: 'Mers',
+  year: 2020
+},
+{
+  name: 'Audi',
+  year: 2021
+},
+]
   ngOnInit() {
   }
 
