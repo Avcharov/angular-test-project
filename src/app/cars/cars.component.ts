@@ -30,6 +30,8 @@ export class Cars implements OnInit {
 
   switchBuy(car:{name:string,carStatus:boolean}){
 car.carStatus = !car.carStatus;
+
+
   }
   switchSell(car:{name:string,carStatus:boolean}){
     car.carStatus = !car.carStatus;

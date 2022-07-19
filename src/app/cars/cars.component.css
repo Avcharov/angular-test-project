@@ -1,21 +1,28 @@
-.btn {
+/* .btn {
   width: 40%;
-  height: 10%;
+  height: 2pc;
   border: 0px;
   border-radius: 10px;
   margin-bottom: 2%;
 }
+.btn.disabled {
+  color: #fff;
+  background: rgb(46, 48, 46);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+}
 .btn-accept:hover {
   color: #fff;
   background: rgb(60, 151, 83);
-  tansition: all 0.3s linear;
+  transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
 }
 .btn-deny:hover {
   color: #fff;
   background: rgb(179, 56, 47);
-  tansition: all 0.3s linear;
+  transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
 }
@@ -47,4 +54,4 @@ h4 {
 }
 .backgr {
   background: rgb(255, 255, 255);
-}
+} */
