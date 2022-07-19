@@ -10,14 +10,15 @@ export class Cars implements OnInit {
 
   cars: { name: string, carStatus: boolean }[] = [
     {
-      name: 'Mers',
+      name: 'One',
       carStatus: true
     },
     {
-      name: 'Audi',
-      carStatus: true},
+      name: 'Two',
+      carStatus: true
+    },
     {
-      name: 'BMW',
+      name: 'Three',
       carStatus: true
     },
   ];
@@ -27,5 +28,11 @@ export class Cars implements OnInit {
     this.cars.push(car);
   }
 
+  switchBuy(car:{name:string,carStatus:boolean}){
+car.carStatus = !car.carStatus;
+  }
+  switchSell(car:{name:string,carStatus:boolean}){
+    car.carStatus = !car.carStatus;
+      }
  
 }

@@ -4,8 +4,8 @@
   <app-car *ngFor="let car of cars" [object]="car">
     <div class="wow">
       <h4 #carHeading>{{ car.name }}</h4>
-      <button class="btn btn-accept" [disabled]="car.carStatus">Buy</button>
-      <button class="btn btn-deny" [disabled]="!car.carStatus">Sell</button>
+      <button class="btn btn-accept" [disabled]="!car.carStatus" (click) = "switchBuy(car)">Buy</button>
+      <button class="btn btn-deny" [disabled]="car.carStatus" (click) = "switchSell(car)">Sell</button>
     </div>
   </app-car>
 </div>
