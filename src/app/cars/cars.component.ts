@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cars implements OnInit {
   constructor() {}
+
   cars: { name: string }[] = [
     {
       name: 'Mers',
@@ -14,10 +15,15 @@ export class Cars implements OnInit {
     {
       name: 'Audi',
     },
+    {
+      name: 'BMW',
+    },
   ];
   ngOnInit() {}
 
   updated(car: { name: string }) {
     this.cars.push(car);
   }
+
+ 
 }

@@ -1,3 +1,11 @@
 <app-add-car (onAddCar)="updated($event)"></app-add-car>
 <hr />
-<app-car *ngFor="let car of cars"> [object] = "car" </app-car>
+<div class="backgr">
+  <app-car *ngFor="let car of cars" [object]="car">
+    <div class="wow">
+      <h4 #carHeading>{{ car.name }}</h4>
+      <button class="btn btn-accept" [disabled]="car.carStatus">Buy</button>
+      <button class="btn btn-deny" [disabled]="!car.carStatus">Sell</button>
+    </div>
+  </app-car>
+</div>

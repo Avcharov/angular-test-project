@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ContentChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-car',
@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./car.component.css'],
 })
 export class Car implements OnInit {
-  @Input() object: { name: string };
+  @Input() object: { name: string};
 
+
+  @ContentChild('carHeading') carHeading : ElementRef;
   ngOnInit() {}
 }
