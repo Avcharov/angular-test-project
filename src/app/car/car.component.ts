@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ContentChild, ElementRef } from '@angular/cor
   styleUrls: ['./car.component.css'],
 })
 export class Car implements OnInit {
-  @Input() object: { name: string};
+  @Input() object: { name: string,carStatus:boolean};
 
 
   @ContentChild('carHeading') carHeading : ElementRef;

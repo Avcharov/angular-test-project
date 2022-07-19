@@ -8,20 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class Cars implements OnInit {
   constructor() {}
 
-  cars: { name: string }[] = [
+  cars: { name: string, carStatus: boolean }[] = [
     {
       name: 'Mers',
+      carStatus: true
     },
     {
       name: 'Audi',
-    },
+      carStatus: true},
     {
       name: 'BMW',
+      carStatus: true
     },
   ];
   ngOnInit() {}
 
-  updated(car: { name: string }) {
+  updated(car: { name: string, carStatus:boolean }) {
     this.cars.push(car);
   }
 
